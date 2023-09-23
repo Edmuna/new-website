@@ -1,0 +1,138 @@
+@media (max-width: 48em) {
+
+    #container {
+        display: flex;
+        gap: .5rem;
+        flex-direction: column;
+    }
+
+    .grid__item {
+        width: 95%;
+    }
+
+    .one {
+        margin-top: 3rem
+    }
+
+    .primary__navigation {
+        --gap: 2em;
+        position: fixed;
+        inset: 0 0 0 20%;
+        z-index: 1000;
+        background: hsla(234, 78%, 16%, 0.95);
+        /* background: steelblue; */
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2rem;
+        font-size: 2rem;
+        transform: translateX(100%);
+        transition: transform 350ms ease-in;
+    }
+
+    .primary__navigation li a {
+        color: var(--font-primary);
+    }
+
+    .visible {
+        transform: translateX(0%);
+    }
+
+    .mobile__nav__toggle {
+        position: fixed;
+        top: .5rem;
+        right: 1rem;
+        z-index: 9999;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    .picture img {
+        margin: .5rem 0;
+    }
+
+    .description {
+        display: grid;
+        gap: 2rem;
+        text-align: center;
+        padding: 1rem 3rem;
+    }
+
+    .description h3 {
+        font-size: 2rem;
+    }
+
+    .description h6 {
+        font-size: 1rem;
+    }
+
+    .two {
+        height: 4rem;
+        font-size: 2rem;
+        overflow: hidden;
+    }
+
+    .two p {
+        --gap: 1rem
+    }
+
+    .two p img {
+        animation: moveRightToLeft 6s linear infinite;
+        position: relative;
+        white-space: nowrap;
+        color: var(--font-secondary);
+        height: 3rem;
+        width: 3rem;
+    }
+
+    @keyframes moveRightToLeft {
+        0% {
+            transform: translateX(100%);
+            /* Start off-screen to the right */
+        }
+
+        100% {
+            transform: translateX(-110%);
+            /* Move to off-screen to the left */
+        }
+    }
+
+    .border__picture {
+        border: 2px solid black;
+    }
+
+    .four {
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .four img {
+        height: 7rem;
+        width: 7rem;
+        padding: .4rem;
+    }
+
+    .five {
+        text-align: center;
+        padding: 1rem 0;
+
+    }
+
+    .splide__slide img {
+        height: 100%;
+        width: 100%;
+        border-radius: 1.25rem;
+        object-fit: cover;
+    }
+
+    .five a {
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    .six {
+        padding: .5rem 0;
+        font-size: 1rem;
+        color: var(--font-secondary);
+    }
+
+
+}
