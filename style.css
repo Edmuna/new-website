@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Caladea&family=Exo+2:wght@300;400&family=Lilita+One&family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400&family=Source+Code+Pro:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea&family=Exo+2:wght@300;400&family=Lilita+One&family=Playfair+Display:wght@400;500&family=Roboto+Slab:wght@300&family=Roboto:wght@300;400&family=Source+Code+Pro:wght@300;400;500&display=swap');
+
 
 *,
 *::before,
@@ -18,7 +19,7 @@
     --secondary-color: #181818;
     --font-primary: #ffffff;
     --font-secondary: #868686;
-    --font-family: "Caladea", serif
+    --font-family: "Roboto slab", serif
 }
 
 body {

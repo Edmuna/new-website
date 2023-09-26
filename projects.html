@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="projects.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <header class="primary__header flex">
+        <button
+          class="hamburger hamburger--collapse mobile__nav__toggle"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="navbar">
+          <ul class="primary__navigation flex">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Work</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="grid__items projects">
+        <div class="projects__title">
+          <img src="./assets/star.png" alt="" />
+          <h1>ALL PROJECTS</h1>
+          <img src="./assets/star.png" alt="" />
+        </div>
+        <div class="grid__item one">
+          <div class="project__img">
+            <a href="">
+              <img src="./assets/Netfix.png" alt="netflix clone project" />
+            </a>
+          </div>
+          <div class="project__name first__name">
+            <div class="project__description">
+              <h5>React</h5>
+              <h4>Netflix clone</h4>
+            </div>
+            <a href="">
+              <img src="./arrrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="grid__item two">
+          <div class="project__img">
+            <a href="">
+              <img src="./assets/Calculator.png" alt="Javascript calculator" />
+            </a>
+          </div>
+          <div class="project__name">
+            <div class="project__description">
+              <h5>Vanilla Javascript</h5>
+              <h4>Calculator</h4>
+            </div>
+            <a href="">
+              <img src="./arrrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="grid__item three">
+          <div class="project__img">
+            <a href="">
+              <img src="./assets/FetchAPI.png" alt="Fetch API" />
+            </a>
+          </div>
+          <div class="project__name">
+            <div class="project__description">
+              <h5>React</h5>
+              <h4>Dictionary</h4>
+            </div>
+            <a href="">
+              <img src="./arrrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="grid__item four">
+          <div class="project__img">
+            <a href="">
+              <img src="./assets/Todo.png" alt="Todo app" />
+            </a>
+          </div>
+          <div class="project__name">
+            <h5>Todo app</h5>
+            <a href="">
+              <img src="arrrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="grid__item five">
+          <div class="project__img">
+            <a href="">
+              <img src="" alt="" />
+            </a>
+          </div>
+          <div class="project__name"></div>
+        </div>
+      </div>
+      <footer class="six">
+        <h5>Copyright &copy 2023 Austria</h5>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
