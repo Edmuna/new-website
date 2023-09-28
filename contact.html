@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="primary-header">
+        <div class="logo"><h1>EDIN</h1></div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a class="active" href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main data-aos="fade-up">
+        <div class="title">
+          <h3>Get in <span>touch</span></h3>
+        </div>
+        <div class="contact">
+          <div class="contact-info">
+            <div class="adress">
+              <img
+                src="./assets/location_on_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />Graz, Austria
+            </div>
+            <div class="phone-number">
+              <img
+                src="./assets/call_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />+43 676 350 8788
+            </div>
+            <div class="mail">
+              <img
+                src="./assets/mail_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />ereda.hr@gmail.com
+            </div>
+            <div class="links">
+              <img src="./assets/linkedin-svgrepo-com.svg" alt="" />
+              <img src="./assets/github-svgrepo-com.svg" alt="" />
+            </div>
+          </div>
+          <form class="contact-form" action="">
+            <div class="inputs">
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Email" />
+            </div>
+            <textarea
+              type="message"
+              placeholder="Message"
+              cols="30"
+              rows="5"
+            ></textarea>
+            <button class="btn">Send message</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

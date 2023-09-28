@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="splide.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="primary-header">
+        <div class="logo"><h1>EDIN</h1></div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a class="active" href="#">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main data-aos="fade-up">
+        <div class="title">
+          <h3>Portfolio <span>Projects</span></h3>
+        </div>
+        <section class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <a href="">
+                  <img src="./assets//Netfix.png" alt="" />
+                  <div class="links">
+                    <a href="">Github</a>
+                    <a href="">Website</a>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="">
+                  <img src="./assets/FetchAPI.png" alt="" />
+                  <div class="links">
+                    <a href="">Github</a>
+                    <a href="">Website</a>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="">
+                  <img src="./assets/Calculator.png" alt="" />
+                  <div class="links">
+                    <a href="">Github</a>
+                    <a href="">Website</a>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="">
+                  <img src="./assets/Todo.png" alt="" />
+                  <div class="links">
+                    <a href="">Github</a>
+                    <a href="">Website</a>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+    <script src="splide.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var splide = new Splide(".splide", {
+        type: "loop",
+        perPage: 3,
+        focus: "center",
+      });
+
+      splide.mount();
+    </script>
+  </body>
+</html>

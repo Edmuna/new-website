@@ -4,136 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/moible.css" />
     <link href="dist/hamburgers.css" rel="stylesheet" />
-    <link rel="stylesheet" href="splide.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="container" id="container">
-      <header class="primary__header flex">
-        <button
-          class="hamburger hamburger--collapse mobile__nav__toggle"
-          type="button"
-        >
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-        <nav class="grid__item navbar">
-          <ul class="primary__navigation flex">
+    <div class="container">
+      <header class="primary-header">
+        <div class="logo"><h1>EDIN</h1></div>
+        <div class="hamburger mobile__nav__toggle inactive hamburger--collapse">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+        <nav class="navbar">
+          <ul>
             <li>
-              <a href="#">Home</a>
+              <a class="active" href="#"
+                ><img class="star" src="./assets/star.png" alt="" />Home</a
+              >
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="/about.html"
+                ><img class="star" src="./assets/star.png" alt="" />About</a
+              >
             </li>
             <li>
-              <a href="./projects.html">Work</a>
+              <a href="./portfolio.html"
+                ><img class="star" src="./assets/star.png" alt="" />Portfolio</a
+              >
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="./contact.html"
+                ><img class="star" src="./assets/star.png" alt="" />Contact</a
+              >
             </li>
           </ul>
         </nav>
       </header>
-      <div
-        class="grid__item one"
-        data-aos="zoom-in"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-      >
-        <div class="picture">
-          <img class="br" src="./assets/dino-modified.jpg" alt="" />
+      <main class="main" data-aos="fade-up">
+        <div class="title">
+          <h1>Edin <span>Hamzić</span></h1>
         </div>
-        <div class="description">
-          <h3>
-            Edin Hamzić
-            <img src="./verified_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
-          </h3>
-          <h6>I'm a full stack web developer based in Austria</h6>
-        </div>
-      </div>
-      <div
-        class="grid__item two"
-        data-aos="zoom-in"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-      >
-        <p class="flex">
-          <img src="/assets/html-5-svgrepo-com (1).svg" alt="" />
-          <img src="/assets/css-3-svgrepo-com.svg" alt="" />
-          <img src="/assets/javascript-svgrepo-com (1).svg" alt="" />
-          <img src="/assets/react-svgrepo-com.svg" alt="" />
-          <img src="/assets/nodejs-icon-svgrepo-com.svg" alt="" />
-          <img src="/assets/mongodb-svgrepo-com.svg" alt="" />
-        </p>
-      </div>
-      <section
-        class="splide grid__item three"
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        aria-label="Splide Basic HTML Example"
-      >
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <a href="#">
-                <img src="/assets/Netfix.png" alt="" />
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <img src="./assets/Calculator.png" alt="" />
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <img src="./assets/FetchAPI.png" alt="" />
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <img src="./assets/Todo.png" alt="" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <div class="grid__item four flex" data-aos="zoom-in">
-        <div class="border__picture br">
-          <a href="#">
-            <img src="./assets/github-142-svgrepo-com.svg" alt="" />
-          </a>
-        </div>
-        <div class="border__picture br">
-          <a href="#">
-            <img src="./assets/linkedin-round-svgrepo-com.svg" alt="" />
-          </a>
-        </div>
-      </div>
-      <div class="grid__item five" data-aos="zoom-in">
-        <a href="#">
-          <h3>LET'S TALK</h3>
-        </a>
-      </div>
-      <footer class="six">
-        <h5>Copyright &copy 2023 Austria</h5>
-      </footer>
+        <div class="description">Full stack web developer</div>
+        <a href="./contact.html" class="btn">Get in touch</a>
+      </main>
     </div>
-    <script src="splide.min.js"></script>
     <script src="script.js"></script>
-    <script>
-      new Splide(".splide").mount();
-    </script>
+    <script src="splide.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
