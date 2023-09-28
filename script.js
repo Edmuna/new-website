@@ -6,3 +6,15 @@ hamburger.addEventListener("click", function () {
     navbar.classList.toggle("visible")
 });
 
+if (window.innerWidth <= 768) {
+    var splide = new Splide(".splide");
+    splide.mount();
+} else {
+    var splide = new Splide(".splide", {
+        type: "loop",
+        perPage: 3,
+        focus: "center",
+    });
+
+    splide.mount();
+}
