@@ -160,10 +160,9 @@ h5 {
 
 
 .description p {
-    color: white;
     padding-block: 1rem;
-    color: var(--font-secondary);
     border-top: 2px dotted var(--font-secondary);
+    color: white;
 }
 
 .personal-info {

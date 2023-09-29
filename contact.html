@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="contact.css" />
     <link href="dist/hamburgers.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("1iqi5gSawssZ1Xp36");
+      })();
+    </script>
     <title>Document</title>
   </head>
   <body>
@@ -71,16 +80,17 @@
               <img src="./assets/github-svgrepo-com.svg" alt="" />
             </div>
           </div>
-          <form class="contact-form" action="">
+          <form class="contact-form" id="myForm" action="">
             <div class="inputs">
-              <input type="text" placeholder="Name" />
-              <input type="text" placeholder="Email" />
+              <input type="text" id="name" placeholder="Name" />
+              <input type="text" id="email" placeholder="Email" />
             </div>
             <textarea
               type="message"
               placeholder="Message"
               cols="30"
               rows="5"
+              id="message"
             ></textarea>
             <button class="btn">Send message</button>
           </form>
