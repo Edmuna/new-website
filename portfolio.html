@@ -7,7 +7,8 @@
     <link href="dist/hamburgers.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="splide.min.css" />
-    <title>Document</title>
+    <script src="splide.min.js"></script>
+    <title>Edin Hamzić</title>
   </head>
   <body>
     <div class="container">
@@ -55,7 +56,9 @@
                   <img src="./assets//Netfix.png" alt="" />
                   <div class="links">
                     <a href="">Github</a>
-                    <a href="">Website</a>
+                    <a href="https://skrljo.netlify.app/" target="_blank"
+                      >Website</a
+                    >
                   </div>
                 </a>
               </li>
@@ -64,7 +67,9 @@
                   <img src="./assets/FetchAPI.png" alt="" />
                   <div class="links">
                     <a href="">Github</a>
-                    <a href="">Website</a>
+                    <a href="https://skelofobija.netlify.app/" target="_blank"
+                      >Website</a
+                    >
                   </div>
                 </a>
               </li>
@@ -73,7 +78,11 @@
                   <img src="./assets/Calculator.png" alt="" />
                   <div class="links">
                     <a href="">Github</a>
-                    <a href="">Website</a>
+                    <a
+                      href="https://calculatoredmuna.netlify.app/"
+                      target="_blank"
+                      >Website</a
+                    >
                   </div>
                 </a>
               </li>
@@ -82,7 +91,9 @@
                   <img src="./assets/Todo.png" alt="" />
                   <div class="links">
                     <a href="">Github</a>
-                    <a href="">Website</a>
+                    <a href="https://shtrudel.netlify.app/" target="_blank"
+                      >Website</a
+                    >
                   </div>
                 </a>
               </li>
@@ -91,10 +102,23 @@
         </section>
       </main>
     </div>
-    <script src="splide.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      if (window.innerWidth <= 768) {
+        var splide = new Splide(".splide");
+        splide.mount();
+      } else {
+        var splide = new Splide(".splide", {
+          type: "loop",
+          perPage: 3,
+          focus: "center",
+        });
+
+        splide.mount();
+      }
     </script>
     <script src="script.js"></script>
   </body>
